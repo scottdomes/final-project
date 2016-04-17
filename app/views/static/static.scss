@@ -44,5 +44,33 @@ body {
         border-radius: 5px;
       }
     }
+
+    #progress-indicator {
+      position: relative;
+
+      hr {
+        position: absolute;
+        border:none;
+        border-top:5px dotted #3adb76;
+        height:1px;
+        width:100%;
+        top: 30%;
+        z-index: -1;
+      }
+      .outline-circle {
+        padding: 15px;
+        border: 3px solid #3adb76;
+        border-radius: 50%;
+        max-width: 90px;
+        margin: 0 auto;
+
+        img {
+          max-width: 100%;
+        }
+      }
+      .outline-circle.completed {
+        background-color: #3adb76;
+      }
+    }
   }
 }
