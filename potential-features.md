@@ -1,0 +1,23 @@
+-Suggesting category based on event name
+-Second voting phase- need certain majority, if don't get it, then choose from top 3 of current choices
+-Suggestions for event location (even if no vote)
+-swipe and done for packing list
+-carpooling on event page- people say they have car, how many they can take, and people can just hop in the car
+-map on event page showing route to event
+-carpooling map showing each stop, when they should leave, with notifications at the appropriate times
+-chat box on event page
+-packing list only visible to admins if they choose
+-users can put in extra-strength votes (if allergic or really hate something) which notifies the admin before finalization
+-random event generator, chooses category and finds suggestions
+-specify length of trips
+-voting through notification
+-responsive
+-packing suggestions
+-foodplanner
+-quick facts about place
+-estimated time of travel, estimated cost
+-splitting carpooling based on distance and food price
+-ability to pay people back
+-pay people to take photos
+-estimated busyness
+-weather
