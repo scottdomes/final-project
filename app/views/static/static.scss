@@ -10,7 +10,7 @@ body {
     position: fixed;
 
     #front-page-heading {
-      margin-top: 100px;
+      margin-top: 80px;
       text-align: center;
 
       h1, h4 {
@@ -20,12 +20,26 @@ body {
     }
 
     #process-explanation {
-      width: 80%;
+      margin-top: 40px;
+      width: 60%;
       text-align: center;
       color: white; 
 
       img {
-        width: 60px;
+        width: 40px;
+      }
+      p {
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+
+    #enter-location {
+      margin-top: 30px;
+      text-align: center;
+
+      button {
+        width: 60%;
+        border-radius: 5px;
       }
     }
   }
