@@ -6,7 +6,7 @@ var LandingForm = require('../components/LandingForm.jsx');
 var LandingContainer = React.createClass({
   render: function () {
     return (
-      <div id="body-overlay">
+      <div>
         <LandingHeader />
         <LandingForm />
       </div>
