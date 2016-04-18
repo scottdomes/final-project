@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
+var routes = require('./config/routes.jsx');
 
-
-React.render(<h1>HelloWorld!</h1>, document.body);
+ReactDOM.render(routes, document.body);
