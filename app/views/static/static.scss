@@ -46,22 +46,14 @@ body {
     }
 
     #progress-indicator {
-      position: relative;
+      margin-top: 20px;
+      width: 60%;
 
-      hr {
-        position: absolute;
-        border:none;
-        border-top:5px dotted #3adb76;
-        height:1px;
-        width:100%;
-        top: 30%;
-        z-index: -1;
-      }
       .outline-circle {
         padding: 15px;
         border: 3px solid #3adb76;
         border-radius: 50%;
-        max-width: 90px;
+        max-width: 70px;
         margin: 0 auto;
 
         img {
@@ -71,6 +63,15 @@ body {
       .outline-circle.completed {
         background-color: #3adb76;
       }
+    }
+
+    .arrow {
+      margin-top: 15px;
+      width: 30px;
+    }
+
+    .custom-offset {
+      margin-left: 4%;
     }
   }
 }
