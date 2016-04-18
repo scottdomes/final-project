@@ -3,11 +3,11 @@ var ReactRouter = require('react-router');
 var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var hashHistory = ReactRouter.hashHistory;
-var LandingHeader = require('../components/LandingHeader.jsx');
+var LandingContainer = require('../containers/LandingContainer.jsx');
 
 var routes = (
   <Router history={hashHistory}>
-    <Route path='/' component={LandingHeader} />
+    <Route path='/' component={LandingContainer} />
   </Router> 
 );
 
