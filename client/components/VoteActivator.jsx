@@ -1,4 +1,5 @@
 var React = require('react');
+var VoteActivatorButton = require('../components/VoteActivatorButton.jsx');
 
 var VoteActivator = React.createClass({
   render: function () {
@@ -12,11 +13,11 @@ var VoteActivator = React.createClass({
 
         <div id="vote-activator" className="row">
           <div className="large-6 large columns text-center">
-            <button className="button vote-activator active">Date</button>
+            <VoteActivatorButton label='Date' />
           </div>
 
           <div className="large-6 large columns text-center">
-            <button className="button vote-activator">Location</button>
+            <VoteActivatorButton label='Location' />
           </div> 
         </div> 
       </div>
