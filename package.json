@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devserve": "webpack-dev-server -d --config webpack.config.js --content-base public/ --progress --colors",
-    "devbuild": "webpack -d --config webpack.config.js --profile --progress --colors"
+    "devserve": "webpack-dev-server -d --config webpack.config.js --content-base public/ --progress --colors --port 3000 --hostname 0.0.0.0",
+    "devbuild": "webpack -d --config webpack.config.js --profile --progress --colors --port 3000 --hostname 0.0.0.0"
   },
   "repository": {
     "type": "git",
