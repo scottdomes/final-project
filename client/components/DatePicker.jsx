@@ -7,10 +7,6 @@ const stateDefinitions = {
     color: null,
     label: 'Available',
   },
-  enquire: {
-    color: '#ffd200',
-    label: 'Enquire',
-  },
   unavailable: {
     selectable: false,
     color: '#78818b',

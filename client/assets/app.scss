@@ -109,3 +109,37 @@ body {
 body.page2 {
   background-image: url('/img/tent3.jpg');
 }
+
+.DateRangePicker {
+
+  .DateRangePicker__PaginationArrowIcon--previous {
+    border-right: 8px solid white;
+    opacity: 1;
+  }
+
+  .DateRangePicker__PaginationArrowIcon--next {
+    border-left: 8px solid white;
+    opacity: 1;
+  }
+
+  .DateRangePicker__MonthHeader span {
+    color: white;
+  }
+
+  .DateRangePicker__CalendarSelection {
+    background-color: #3adb76;
+    border: 1px solid #3adb76;
+  }
+
+  .DateRangePicker__LegendItemColor--selection {
+    background-color: #3adb76;
+  }
+
+  .DateRangePicker__CalendarHighlight--single {
+    border: 1px solid #3adb76;
+  }
+
+  .DateRangePicker__LegendItemLabel {
+    color: white;
+  }
+}

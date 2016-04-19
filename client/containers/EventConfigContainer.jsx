@@ -1,5 +1,6 @@
 var React = require('react');
 var ProgressIndicator = require('../components/ProgressIndicator.jsx');
+var DatePickerWrapper = require('../components/DatePickerWrapper.jsx');
 var DatePicker = require('../components/DatePicker.jsx');
 
 var EventConfigContainer = React.createClass({
@@ -7,7 +8,9 @@ var EventConfigContainer = React.createClass({
     return (
       <div>
         <ProgressIndicator />
-        <DatePicker />
+        <DatePickerWrapper>
+          <DatePicker />
+        </DatePickerWrapper>
       </div>
     )
   }
