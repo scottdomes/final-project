@@ -8,10 +8,11 @@ development:
   password: <%= ENV['DB_PASSWORD'] %>
 
 production:
-  adapter: postgresql
-  database: <%= ENV['DB_NAME'] %>
-  host: <%= ENV['DB_HOST'] %>
-  pool: 5
-  timeout: 5000
-  username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
+  # adapter: postgresql
+  # database: <%= ENV['DB_NAME'] %>
+  # host: <%= ENV['DB_HOST'] %>
+  # pool: 5
+  # timeout: 5000
+  # username: <%= ENV['DB_USERNAME'] %>
+  # password: <%= ENV['DB_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
