@@ -2500,3 +2500,21 @@ Unpermitted parameter: format
   [1m[36mSQL (13.4ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "1123123FFSFD3434334r3ASDASDASDASDSD"], ["created_at", "2016-04-20 23:07:52.506220"], ["updated_at", "2016-04-20 23:07:52.506220"]]
   [1m[35m (314.8ms)[0m  COMMIT
 Completed 201 Created in 441ms (Views: 9.7ms | ActiveRecord: 380.2ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-04-20 16:16:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (4.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by API::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (3.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 101ms (Views: 6.5ms | ActiveRecord: 20.2ms)
+
+
+Started POST "/api/users/?fb_id=ASDAE@@ESF$RQ@@@ASDADASDS" for ::1 at 2016-04-20 16:17:21 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"ASDAE@@ESF$RQ@@@ASDADASDS"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "ASDAE@@ESF$RQ@@@ASDADASDS"], ["created_at", "2016-04-20 23:17:21.653231"], ["updated_at", "2016-04-20 23:17:21.653231"]]
+  [1m[36m (24.0ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 50ms (Views: 9.6ms | ActiveRecord: 25.3ms)
