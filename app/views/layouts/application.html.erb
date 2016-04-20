@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>FinalProject</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <head>
+        <title>Camplight</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css" media="screen" title="no title" charset="utf-8">
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
 
-<%= yield %>
+        <%= yield %>
 
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js" charset="utf-8"></script>
+    </body>
 </html>
