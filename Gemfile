@@ -52,3 +52,7 @@ end
 
 # Use 12Factor for Heroku deploy
 gem 'rails_12factor', group: :production
+
+gem 'active_model_serializers'
+
+gem 'responders', '~> 2.0'
