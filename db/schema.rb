@@ -11,10 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160420184833) do
+ActiveRecord::Schema.define(version: 20160421193829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "event_dates", force: :cascade do |t|
+    t.date     "start"
+    t.date     "end"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "event_id"
+    t.integer  "user_id"
+  end
+
+  add_index "event_dates", ["event_id"], name: "index_event_dates_on_event_id", using: :btree
+  add_index "event_dates", ["user_id"], name: "index_event_dates_on_user_id", using: :btree
+
+  create_table "events", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "vote_on_location"
+    t.boolean  "vote_on_date"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.integer  "user_id"
+  end
+
+  add_index "events", ["user_id"], name: "index_events_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "fb_id"
@@ -22,4 +45,7 @@ ActiveRecord::Schema.define(version: 20160420184833) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "event_dates", "events"
+  add_foreign_key "event_dates", "users"
+  add_foreign_key "events", "users"
 end
