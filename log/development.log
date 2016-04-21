@@ -1,0 +1,1044 @@
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:19:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (46.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (54.1ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:19:54.725681"], ["updated_at", "2016-04-21 18:19:54.725681"]]
+  [1m[35m (48.6ms)[0m  COMMIT
+Completed 201 Created in 268ms (Views: 17.4ms | ActiveRecord: 165.6ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:21:07 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:21:07.993665"], ["updated_at", "2016-04-21 18:21:07.993665"]]
+  [1m[36m (27.4ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 36ms (Views: 4.5ms | ActiveRecord: 28.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:21:11 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:21:11.736070"], ["updated_at", "2016-04-21 18:21:11.736070"]]
+  [1m[35m (8.6ms)[0m  COMMIT
+Completed 201 Created in 17ms (Views: 5.8ms | ActiveRecord: 9.1ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:21:42 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:21:42.843637"], ["updated_at", "2016-04-21 18:21:42.843637"]]
+  [1m[36m (29.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 35ms (Views: 3.4ms | ActiveRecord: 29.7ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:22:13 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:22:13.723817"], ["updated_at", "2016-04-21 18:22:13.723817"]]
+  [1m[35m (10.1ms)[0m  COMMIT
+Completed 201 Created in 17ms (Views: 3.5ms | ActiveRecord: 10.6ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:22:22 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:22:22.546220"], ["updated_at", "2016-04-21 18:22:22.546220"]]
+  [1m[36m (20.5ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 29ms (Views: 5.9ms | ActiveRecord: 21.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:23:07 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:23:07.881192"], ["updated_at", "2016-04-21 18:23:07.881192"]]
+  [1m[35m (28.7ms)[0m  COMMIT
+Completed 201 Created in 53ms (Views: 20.1ms | ActiveRecord: 29.2ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:23:12 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:23:12.104494"], ["updated_at", "2016-04-21 18:23:12.104494"]]
+  [1m[36m (12.1ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 20ms (Views: 4.4ms | ActiveRecord: 12.6ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:28:57 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (16.7ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:28:57.813193"], ["updated_at", "2016-04-21 18:28:57.813193"]]
+  [1m[35m (50.3ms)[0m  COMMIT
+Completed 201 Created in 102ms (Views: 30.6ms | ActiveRecord: 67.5ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:31:14 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:31:14.688558"], ["updated_at", "2016-04-21 18:31:14.688558"]]
+  [1m[36m (50.5ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 62ms (Views: 3.6ms | ActiveRecord: 56.2ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:31:23 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:31:23.573136"], ["updated_at", "2016-04-21 18:31:23.573136"]]
+  [1m[35m (43.9ms)[0m  COMMIT
+Completed 201 Created in 77ms (Views: 6.1ms | ActiveRecord: 44.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:31:28 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:31:28.605775"], ["updated_at", "2016-04-21 18:31:28.605775"]]
+  [1m[36m (16.1ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 22ms (Views: 3.8ms | ActiveRecord: 16.5ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:32:07 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:32:07.533272"], ["updated_at", "2016-04-21 18:32:07.533272"]]
+  [1m[35m (37.8ms)[0m  COMMIT
+Completed 201 Created in 46ms (Views: 5.7ms | ActiveRecord: 38.3ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:33:35 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:33:35.962010"], ["updated_at", "2016-04-21 18:33:35.962010"]]
+  [1m[36m (19.6ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 32ms (Views: 8.6ms | ActiveRecord: 20.1ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:35:03 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:35:03.482626"], ["updated_at", "2016-04-21 18:35:03.482626"]]
+  [1m[35m (34.2ms)[0m  COMMIT
+Completed 201 Created in 44ms (Views: 3.5ms | ActiveRecord: 34.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:35:34 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:35:34.792560"], ["updated_at", "2016-04-21 18:35:34.792560"]]
+  [1m[36m (13.1ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 20ms (Views: 3.5ms | ActiveRecord: 13.7ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:36:19 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (10.9ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:36:19.254590"], ["updated_at", "2016-04-21 18:36:19.254590"]]
+  [1m[35m (26.8ms)[0m  COMMIT
+Completed 201 Created in 45ms (Views: 4.8ms | ActiveRecord: 37.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:37:49 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:37:49.422519"], ["updated_at", "2016-04-21 18:37:49.422519"]]
+  [1m[36m (25.0ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 34ms (Views: 6.0ms | ActiveRecord: 25.4ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:37:55 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:37:55.485111"], ["updated_at", "2016-04-21 18:37:55.485111"]]
+  [1m[35m (12.3ms)[0m  COMMIT
+Completed 201 Created in 21ms (Views: 5.2ms | ActiveRecord: 12.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:38:46 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:38:46.581192"], ["updated_at", "2016-04-21 18:38:46.581192"]]
+  [1m[36m (44.5ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 50ms (Views: 3.5ms | ActiveRecord: 44.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:38:59 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:38:59.882711"], ["updated_at", "2016-04-21 18:38:59.882711"]]
+  [1m[35m (10.3ms)[0m  COMMIT
+Completed 201 Created in 18ms (Views: 5.5ms | ActiveRecord: 10.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:39:07 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:39:07.240640"], ["updated_at", "2016-04-21 18:39:07.240640"]]
+  [1m[36m (11.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 17ms (Views: 3.4ms | ActiveRecord: 11.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:39:46 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:39:46.599524"], ["updated_at", "2016-04-21 18:39:46.599524"]]
+  [1m[35m (12.6ms)[0m  COMMIT
+Completed 201 Created in 21ms (Views: 5.4ms | ActiveRecord: 13.1ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:40:42 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:40:42.982866"], ["updated_at", "2016-04-21 18:40:42.982866"]]
+  [1m[36m (15.5ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 23ms (Views: 3.6ms | ActiveRecord: 16.1ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:42:58 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:42:58.678471"], ["updated_at", "2016-04-21 18:42:58.678471"]]
+  [1m[35m (11.2ms)[0m  COMMIT
+Completed 201 Created in 19ms (Views: 3.7ms | ActiveRecord: 11.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:43:29 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:43:29.434961"], ["updated_at", "2016-04-21 18:43:29.434961"]]
+  [1m[36m (14.9ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 22ms (Views: 3.8ms | ActiveRecord: 15.4ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:43:54 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:43:54.917550"], ["updated_at", "2016-04-21 18:43:54.917550"]]
+  [1m[35m (8.3ms)[0m  COMMIT
+Completed 201 Created in 16ms (Views: 3.3ms | ActiveRecord: 9.1ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:44:21 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:44:22.002496"], ["updated_at", "2016-04-21 18:44:22.002496"]]
+  [1m[36m (14.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 41ms (Views: 15.7ms | ActiveRecord: 15.1ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:44:53 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:44:53.731365"], ["updated_at", "2016-04-21 18:44:53.731365"]]
+  [1m[35m (15.2ms)[0m  COMMIT
+Completed 201 Created in 23ms (Views: 3.8ms | ActiveRecord: 15.7ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:45:16 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:45:16.207791"], ["updated_at", "2016-04-21 18:45:16.207791"]]
+  [1m[36m (14.7ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 22ms (Views: 4.0ms | ActiveRecord: 15.2ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:45:43 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:45:43.811406"], ["updated_at", "2016-04-21 18:45:43.811406"]]
+  [1m[35m (12.3ms)[0m  COMMIT
+Completed 201 Created in 20ms (Views: 3.8ms | ActiveRecord: 12.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:47:04 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (15.0ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:47:04.294256"], ["updated_at", "2016-04-21 18:47:04.294256"]]
+  [1m[36m (52.4ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 75ms (Views: 3.8ms | ActiveRecord: 67.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:48:04 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (19.5ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:48:04.660147"], ["updated_at", "2016-04-21 18:48:04.660147"]]
+  [1m[35m (18.5ms)[0m  COMMIT
+Completed 201 Created in 46ms (Views: 3.8ms | ActiveRecord: 38.2ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:48:34 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:48:34.649482"], ["updated_at", "2016-04-21 18:48:34.649482"]]
+  [1m[36m (18.1ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 64ms (Views: 43.5ms | ActiveRecord: 18.5ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:48:49 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:48:49.432344"], ["updated_at", "2016-04-21 18:48:49.432344"]]
+  [1m[35m (48.8ms)[0m  COMMIT
+Completed 201 Created in 164ms (Views: 108.9ms | ActiveRecord: 49.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:49:10 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:49:10.383753"], ["updated_at", "2016-04-21 18:49:10.383753"]]
+  [1m[36m (9.7ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 35ms (Views: 20.2ms | ActiveRecord: 10.3ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:49:58 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:49:58.491751"], ["updated_at", "2016-04-21 18:49:58.491751"]]
+  [1m[35m (37.1ms)[0m  COMMIT
+Completed 201 Created in 64ms (Views: 21.8ms | ActiveRecord: 39.2ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:50:40 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:50:40.733327"], ["updated_at", "2016-04-21 18:50:40.733327"]]
+  [1m[36m (16.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 106ms (Views: 85.7ms | ActiveRecord: 17.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:50:51 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:50:51.179208"], ["updated_at", "2016-04-21 18:50:51.179208"]]
+  [1m[35m (29.5ms)[0m  COMMIT
+Completed 201 Created in 71ms (Views: 21.6ms | ActiveRecord: 30.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:51:08 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.2ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:51:08.456916"], ["updated_at", "2016-04-21 18:51:08.456916"]]
+  [1m[36m (18.6ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 75ms (Views: 30.6ms | ActiveRecord: 28.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:51:29 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:51:29.260498"], ["updated_at", "2016-04-21 18:51:29.260498"]]
+  [1m[35m (23.4ms)[0m  COMMIT
+Completed 201 Created in 35ms (Views: 7.1ms | ActiveRecord: 23.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:52:16 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:52:16.782266"], ["updated_at", "2016-04-21 18:52:16.782266"]]
+  [1m[36m (16.0ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 31ms (Views: 4.3ms | ActiveRecord: 17.4ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:52:32 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:52:32.159485"], ["updated_at", "2016-04-21 18:52:32.159485"]]
+  [1m[35m (12.1ms)[0m  COMMIT
+Completed 201 Created in 20ms (Views: 3.8ms | ActiveRecord: 12.6ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:52:45 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:52:45.615004"], ["updated_at", "2016-04-21 18:52:45.615004"]]
+  [1m[36m (16.2ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 30ms (Views: 6.8ms | ActiveRecord: 16.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:53:05 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:53:05.748930"], ["updated_at", "2016-04-21 18:53:05.748930"]]
+  [1m[35m (31.6ms)[0m  COMMIT
+Completed 201 Created in 44ms (Views: 6.4ms | ActiveRecord: 32.4ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:56:35 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (157.5ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:56:35.419179"], ["updated_at", "2016-04-21 18:56:35.419179"]]
+  [1m[36m (42.9ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 208ms (Views: 4.0ms | ActiveRecord: 200.7ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:56:49 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:56:49.806858"], ["updated_at", "2016-04-21 18:56:49.806858"]]
+  [1m[35m (20.7ms)[0m  COMMIT
+Completed 201 Created in 35ms (Views: 9.5ms | ActiveRecord: 21.3ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:57:00 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (90.0ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:57:00.917694"], ["updated_at", "2016-04-21 18:57:00.917694"]]
+  [1m[36m (95.9ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 194ms (Views: 5.8ms | ActiveRecord: 186.1ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:57:11 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (56.9ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:57:11.926394"], ["updated_at", "2016-04-21 18:57:11.926394"]]
+  [1m[35m (88.4ms)[0m  COMMIT
+Completed 201 Created in 157ms (Views: 8.3ms | ActiveRecord: 145.5ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 11:57:41 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (33.8ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 18:57:41.924879"], ["updated_at", "2016-04-21 18:57:41.924879"]]
+  [1m[36m (45.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 87ms (Views: 5.4ms | ActiveRecord: 79.3ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:00:04 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:00:04.895132"], ["updated_at", "2016-04-21 19:00:04.895132"]]
+  [1m[35m (11.3ms)[0m  COMMIT
+Completed 201 Created in 21ms (Views: 5.3ms | ActiveRecord: 12.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:00:38 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:00:39.169861"], ["updated_at", "2016-04-21 19:00:39.169861"]]
+  [1m[36m (97.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 105ms (Views: 5.1ms | ActiveRecord: 97.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:01:09 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:01:09.298514"], ["updated_at", "2016-04-21 19:01:09.298514"]]
+  [1m[35m (12.2ms)[0m  COMMIT
+Completed 201 Created in 20ms (Views: 4.7ms | ActiveRecord: 12.6ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:02:02 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:02:02.119994"], ["updated_at", "2016-04-21 19:02:02.119994"]]
+  [1m[36m (26.2ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 61ms (Views: 5.5ms | ActiveRecord: 26.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:02:52 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:02:52.133824"], ["updated_at", "2016-04-21 19:02:52.133824"]]
+  [1m[35m (15.4ms)[0m  COMMIT
+Completed 201 Created in 23ms (Views: 4.2ms | ActiveRecord: 16.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:03:18 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:03:18.124924"], ["updated_at", "2016-04-21 19:03:18.124924"]]
+  [1m[36m (17.4ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 32ms (Views: 10.7ms | ActiveRecord: 18.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:03:52 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:03:52.814674"], ["updated_at", "2016-04-21 19:03:52.814674"]]
+  [1m[35m (13.8ms)[0m  COMMIT
+Completed 201 Created in 22ms (Views: 5.6ms | ActiveRecord: 14.3ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:04:04 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:04:04.675473"], ["updated_at", "2016-04-21 19:04:04.675473"]]
+  [1m[36m (11.0ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 20ms (Views: 5.3ms | ActiveRecord: 11.7ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:04:10 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:04:10.850532"], ["updated_at", "2016-04-21 19:04:10.850532"]]
+  [1m[35m (12.2ms)[0m  COMMIT
+Completed 201 Created in 18ms (Views: 3.4ms | ActiveRecord: 12.6ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:04:57 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:04:57.504331"], ["updated_at", "2016-04-21 19:04:57.504331"]]
+  [1m[36m (10.7ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 21ms (Views: 5.6ms | ActiveRecord: 12.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:15:19 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (16.8ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:15:19.223256"], ["updated_at", "2016-04-21 19:15:19.223256"]]
+  [1m[35m (19.1ms)[0m  COMMIT
+Completed 201 Created in 42ms (Views: 3.5ms | ActiveRecord: 36.0ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:15:37 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:15:37.459402"], ["updated_at", "2016-04-21 19:15:37.459402"]]
+  [1m[36m (16.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 24ms (Views: 3.6ms | ActiveRecord: 16.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:16:43 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (9.0ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:16:43.623820"], ["updated_at", "2016-04-21 19:16:43.623820"]]
+  [1m[35m (13.9ms)[0m  COMMIT
+Completed 201 Created in 35ms (Views: 6.4ms | ActiveRecord: 23.1ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:17:15 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:17:15.239422"], ["updated_at", "2016-04-21 19:17:15.239422"]]
+  [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 20ms (Views: 7.4ms | ActiveRecord: 10.5ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:18:46 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (15.4ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:18:46.681482"], ["updated_at", "2016-04-21 19:18:46.681482"]]
+  [1m[35m (23.3ms)[0m  COMMIT
+Completed 201 Created in 48ms (Views: 5.9ms | ActiveRecord: 38.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:20:47 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:20:47.786438"], ["updated_at", "2016-04-21 19:20:47.786438"]]
+  [1m[36m (7.8ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 15ms (Views: 4.4ms | ActiveRecord: 8.3ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:21:07 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (20.0ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:21:07.064942"], ["updated_at", "2016-04-21 19:21:07.064942"]]
+  [1m[35m (43.8ms)[0m  COMMIT
+Completed 201 Created in 71ms (Views: 4.6ms | ActiveRecord: 63.9ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:22:30 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:22:30.447051"], ["updated_at", "2016-04-21 19:22:30.447051"]]
+  [1m[36m (10.4ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 19ms (Views: 3.7ms | ActiveRecord: 11.2ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:25:12 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:25:12.796463"], ["updated_at", "2016-04-21 19:25:12.796463"]]
+  [1m[35m (179.3ms)[0m  COMMIT
+Completed 201 Created in 188ms (Views: 6.2ms | ActiveRecord: 179.8ms)
+Incoming Headers:
+  Origin: http://localhost:3001
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/users" for 127.0.0.1 at 2016-04-21 12:25:23 -0700
+Processing by API::UsersController#create as JSON
+  Parameters: {"fb_id"=>"10153549453065382"}
+Unpermitted parameter: format
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("fb_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["fb_id", "10153549453065382"], ["created_at", "2016-04-21 19:25:23.257918"], ["updated_at", "2016-04-21 19:25:23.257918"]]
+  [1m[36m (27.1ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 33ms (Views: 3.5ms | ActiveRecord: 27.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEvents (20160421193743)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1016.1ms)[0m  [1mCREATE TABLE "events" ("id" serial primary key, "name" character varying, "vote_on_location" boolean, "vote_on_date" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35m (50.5ms)[0m  CREATE  INDEX  "index_events_on_user_id" ON "events"  ("user_id")
+  [1m[36m (86.7ms)[0m  [1mALTER TABLE "events" ADD CONSTRAINT "fk_rails_0cb5590091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (15.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160421193743"]]
+  [1m[36m (36.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateEventDates (20160421193829)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (43.5ms)[0m  [1mCREATE TABLE "event_dates" ("id" serial primary key, "start" date, "end" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "event_id" integer, "user_id" integer) [0m
+  [1m[35m (40.0ms)[0m  CREATE  INDEX  "index_event_dates_on_event_id" ON "event_dates"  ("event_id")
+  [1m[36m (23.5ms)[0m  [1mCREATE  INDEX  "index_event_dates_on_user_id" ON "event_dates"  ("user_id")[0m
+  [1m[35m (1.4ms)[0m  ALTER TABLE "event_dates" ADD CONSTRAINT "fk_rails_261ec9f0f8"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "event_dates" ADD CONSTRAINT "fk_rails_a59e9153e0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160421193829"]]
+  [1m[36m (13.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (13.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'event_dates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'events'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
