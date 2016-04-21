@@ -4,8 +4,11 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
       # We are going to list our resources here
-      resources :users, :only => [:show, :create, :update]
-      resources :events, :only => [:show, :create, :update]
+      #, :only => [:show, :create, :update]
+      resources :users, defaults: { format: :json } do
+        resources :events
+      end
+      resources :events
   end
 
 end

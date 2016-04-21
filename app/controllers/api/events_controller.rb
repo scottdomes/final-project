@@ -1,6 +1,14 @@
-et
-class API::EventsControllerController < ApplicationController
+class API::EventsController < ApplicationController
   respond_to :json
+
+  def index
+    if (params[:user_id])
+      respond_with Event.where(user_id:params[:user_id])
+    else
+      respond_with Event.all
+    end
+
+  end
 
   def show
     respond_with Event.find(params[:id])
@@ -34,7 +42,7 @@ class API::EventsControllerController < ApplicationController
   private
 
     def event_params
-      params.permit(:id)
+      params.permit(:name, :vote_on_location, :vote_on_date, :user_id)
     end
 
 
