@@ -3,6 +3,4 @@ class Event < ActiveRecord::Base
   has_many :event_dates, dependent: :destroy
 
   validates :name, presence: true
-  validates :vote_on_location, presence: true
-  validates :vote_on_date, presence: true
 end
