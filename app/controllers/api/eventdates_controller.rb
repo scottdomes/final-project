@@ -42,7 +42,7 @@ class API::EventDatedatesController < ApplicationController
   private
 
     def eventdate_params
-      params.permit(:start, :end, :event_id)
+      params.permit(:start_date, :end_date, :event_id)
     end
 
 end
