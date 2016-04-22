@@ -15,7 +15,9 @@ class API::EventsController < ApplicationController
   end
 
   def create
+    event_date_params = event_params.pop(:event_date)
     event = Event.new(event_params)
+    event.event_dates.build(event_date_params)
     if event.save
       render json: event, status: 201, location: [:api, event]
     else
@@ -42,7 +44,7 @@ class API::EventsController < ApplicationController
   private
 
     def event_params
-      params.permit(:name, :vote_on_location, :vote_on_date, :user_id)
+      params.permit(:name, :vote_on_location, :vote_on_date, :user_id, :event_date)
     end
 
 
