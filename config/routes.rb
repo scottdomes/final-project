@@ -9,6 +9,7 @@ Rails.application.routes.draw do
         resources :events
       end
       resources :events
+      resources :votes
   end
 
 end
