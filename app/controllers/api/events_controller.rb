@@ -15,9 +15,9 @@ class API::EventsController < ApplicationController
   end
 
   def create
-    event_date_params = event_params.pop(:event_date)
+    # event_date_params = event_params.pop(:event_date)
     event = Event.new(event_params)
-    event.event_dates.build(event_date_params)
+    # event.event_dates.build(event_date_params)
     if event.save
       render json: event, status: 201, location: [:api, event]
     else
