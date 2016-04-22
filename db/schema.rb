@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422225148) do
+ActiveRecord::Schema.define(version: 20160422232458) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "campsite_votes", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "campsite_votes", ["user_id"], name: "index_campsite_votes_on_user_id", using: :btree
+
+  create_table "date_votes", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "date_votes", ["user_id"], name: "index_date_votes_on_user_id", using: :btree
 
   create_table "event_dates", force: :cascade do |t|
     t.date     "start_date"
@@ -55,16 +71,9 @@ ActiveRecord::Schema.define(version: 20160422225148) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "votes", force: :cascade do |t|
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "votes", ["user_id"], name: "index_votes_on_user_id", using: :btree
-
+  add_foreign_key "campsite_votes", "users"
+  add_foreign_key "date_votes", "users"
   add_foreign_key "event_dates", "events"
   add_foreign_key "event_dates", "users"
   add_foreign_key "events", "users"
-  add_foreign_key "votes", "users"
 end
