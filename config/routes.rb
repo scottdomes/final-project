@@ -7,10 +7,16 @@ Rails.application.routes.draw do
       #, :only => [:show, :create, :update]
       resources :users, defaults: { format: :json } do
         resources :events
+        resources :items
       end
       resources :events
       resources :campsite_votes
       resources :date_votes
+      resources :items
+
+      resources :events, defaults: {format: :json} do
+        resources :items
+      end
   end
 
 end
