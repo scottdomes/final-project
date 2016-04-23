@@ -1,6 +1,10 @@
 class API::ItemsController < ApplicationController
   respond_to :json
   
+  def index
+    respond_with Item.all
+  end
+
   def create
     item = Item.new(item_params)
     if item.save
@@ -10,10 +14,21 @@ class API::ItemsController < ApplicationController
     end
   end
 
+  # PUT    /api/items/:id(.:format)
+  def update
+    item = Item.find(params[:id])
+
+    if item.update(item_params)
+      render json: item, status: 200, location: [:api, item]
+    else
+      render json: { errors: item.errors }, status: 422
+    end
+  end
+
   private
 
   def item_params
-    params.permit(:name, :quantity, :list_type, :user_id, :event_id)
+    params.permit(:label, :quantity, :list_type, :event_id, :user_id)
   end
 
   
