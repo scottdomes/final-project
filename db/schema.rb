@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 20160422234147) do
   add_index "date_votes", ["user_id"], name: "index_date_votes_on_user_id", using: :btree
 
   create_table "event_dates", force: :cascade do |t|
-    t.date     "start_date"
-    t.date     "end_date"
+    t.string   "start_date"
+    t.string   "end_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "event_id"
