@@ -30,8 +30,9 @@ class API::DateVotesController < ApplicationController
 
   def destroy
     date_vote = DateVote.find(params[:id])
-    date_vote.destroy
-    head 204
+    if date_vote.destroy
+      render json: date_vote, status: 200, location: [:api, campsite_vote]
+    end
   end
 
   private

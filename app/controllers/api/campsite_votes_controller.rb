@@ -30,8 +30,9 @@ class API::CampsiteVotesController < ApplicationController
 
   def destroy
     campsite_vote = CampsiteVote.find(params[:id])
-    campsite_vote.destroy
-    head 204
+    if campsite_vote.destroy
+      render json: campsite_vote, status: 200, location: [:api, campsite_vote]
+    end
   end
 
   private

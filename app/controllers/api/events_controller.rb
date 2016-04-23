@@ -15,8 +15,11 @@ class API::EventsController < ApplicationController
   end
 
   def create
-    dates = JSON.parse(params[:dateRange])
-    params.delete("dateRange")
+
+    dates = params[:dateRange]
+    
+    # params.delete("dateRange")
+
     event = Event.new(event_params)
 
     if event.save
