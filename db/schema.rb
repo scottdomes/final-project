@@ -25,6 +25,22 @@ ActiveRecord::Schema.define(version: 20160422234147) do
 
   add_index "camp_sites", ["event_id"], name: "index_camp_sites_on_event_id", using: :btree
 
+  create_table "campsite_votes", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "campsite_votes", ["user_id"], name: "index_campsite_votes_on_user_id", using: :btree
+
+  create_table "date_votes", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "date_votes", ["user_id"], name: "index_date_votes_on_user_id", using: :btree
+
   create_table "event_dates", force: :cascade do |t|
     t.date     "start_date"
     t.date     "end_date"
@@ -49,11 +65,11 @@ ActiveRecord::Schema.define(version: 20160422234147) do
   add_index "events", ["user_id"], name: "index_events_on_user_id", using: :btree
 
   create_table "items", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.string   "name"
-    t.integer  "quantity"
-    t.string   "list_type"
+    t.string   "quantity",   default: "0"
+    t.string   "list_type",  default: "public"
     t.integer  "user_id"
     t.integer  "event_id"
   end
@@ -65,6 +81,8 @@ ActiveRecord::Schema.define(version: 20160422234147) do
   end
 
   add_foreign_key "camp_sites", "events"
+  add_foreign_key "campsite_votes", "users"
+  add_foreign_key "date_votes", "users"
   add_foreign_key "event_dates", "events"
   add_foreign_key "event_dates", "users"
   add_foreign_key "events", "users"

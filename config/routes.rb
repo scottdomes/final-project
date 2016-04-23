@@ -9,8 +9,16 @@ Rails.application.routes.draw do
         resources :events do
           resources :campsites, except: [:edit, :new]
         end
+        resources :items
       end
       resources :events
+      resources :campsite_votes
+      resources :date_votes
+      resources :items
+
+      resources :events, defaults: {format: :json} do
+        resources :items
+      end
   end
 
 end
