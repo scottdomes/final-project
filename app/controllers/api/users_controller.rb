@@ -10,11 +10,16 @@ class API::UsersController < ApplicationController
   end
 
   def create
-    user = User.new(user_params)
-    if user.save
-      render json: user, status: 201, location: [:api, user]
+    matching_user = User.find_by(fb_id: params[:fb_id])
+    if matching_user
+      render json: matching_user, status: 201, location: [:api, matching_user]
     else
-      render json: { errors: user.errors }, status: 422
+      user = User.new(user_params)
+      if user.save
+        render json: user, status: 201, location: [:api, user]
+      else
+        render json: { errors: user.errors }, status: 422
+      end
     end
   end
 
