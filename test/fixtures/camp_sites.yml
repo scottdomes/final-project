@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  event_id: 
 
 two:
   name: MyString
+  event_id: 

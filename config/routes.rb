@@ -6,7 +6,9 @@ Rails.application.routes.draw do
       # We are going to list our resources here
       #, :only => [:show, :create, :update]
       resources :users, defaults: { format: :json } do
-        resources :events
+        resources :events do
+          resources :campsites, except: [:edit, :new]
+        end
       end
       resources :events
   end

@@ -11,16 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422231151) do
+ActiveRecord::Schema.define(version: 20160422234147) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "camp_sites", force: :cascade do |t|
     t.string   "name"
+    t.integer  "event_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "camp_sites", ["event_id"], name: "index_camp_sites_on_event_id", using: :btree
 
   create_table "event_dates", force: :cascade do |t|
     t.date     "start_date"
@@ -61,6 +64,7 @@ ActiveRecord::Schema.define(version: 20160422231151) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "camp_sites", "events"
   add_foreign_key "event_dates", "events"
   add_foreign_key "event_dates", "users"
   add_foreign_key "events", "users"

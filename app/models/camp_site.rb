@@ -1,5 +1,5 @@
 class CampSite < ActiveRecord::Base
   belongs_to :event
 
-  validate :name, presence: true
+  validates :name, presence: true
 end
