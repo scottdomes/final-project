@@ -10,7 +10,8 @@ class API::DateVotesController < ApplicationController
   end
 
   def create
-    date_vote = DateVote.new(date_vote_params)
+    properties = {user_id: params['user_id'], event_date_id: params['id']}
+    date_vote = DateVote.new(properties)
     if date_vote.save
       render json: date_vote, status: 201, location: [:api, date_vote]
     else

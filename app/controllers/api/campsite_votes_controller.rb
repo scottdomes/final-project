@@ -10,7 +10,8 @@ class API::CampsiteVotesController < ApplicationController
   end
 
   def create
-    campsite_vote = CampsiteVote.new(campsite_vote_params)
+    properties = {user_id: params['user_id'], camp_site_id: params['id']}
+    campsite_vote = CampsiteVote.new(properties)
     if campsite_vote.save
       render json: campsite_vote, status: 201, location: [:api, campsite_vote]
     else

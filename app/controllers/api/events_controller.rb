@@ -17,7 +17,8 @@ class API::EventsController < ApplicationController
     render json: {
       :event => event, 
       :dates => dates, 
-      :campsites => campsites }
+      :campsites => campsites,
+    }
   end
 
   def create
@@ -31,7 +32,7 @@ class API::EventsController < ApplicationController
     if event.save
       e = EventDate.new(start_date: dates['start_date'], end_date: dates['end_date'], user_id: params['user_id'], event_id: Event.last.id)
       if e.save
-        campsite = CampSite.new(user_id: params['user_id'], name: params['campsite_name'])
+        campsite = CampSite.new(user_id: params['user_id'], name: params['campsite_name'], event_id: Event.last.id)
         if campsite.save
           render json: event, status: 201, location: [:api, event]
           # render json: e, status: 201, location: [:api, e]
