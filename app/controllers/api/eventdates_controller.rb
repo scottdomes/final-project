@@ -1,4 +1,4 @@
-class API::EventDatedatesController < ApplicationController
+class API::EventDatesController < ApplicationController
   respond_to :json
 
   def index
