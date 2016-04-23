@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       resources :campsite_votes
       resources :date_votes
       resources :items
+      resources :camp_sites
 
       resources :events, defaults: {format: :json} do
         resources :items

@@ -41,7 +41,7 @@ class API::CampSitesController < ApplicationController
   private
 
     def campsite_params
-      params.permit(:name)
+      params.permit(:name, :event_id)
     end
 
 end
