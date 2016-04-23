@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422234147) do
+ActiveRecord::Schema.define(version: 20160423173823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,22 +21,25 @@ ActiveRecord::Schema.define(version: 20160422234147) do
     t.integer  "event_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
 
   add_index "camp_sites", ["event_id"], name: "index_camp_sites_on_event_id", using: :btree
 
   create_table "campsite_votes", force: :cascade do |t|
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "camp_site_id"
   end
 
   add_index "campsite_votes", ["user_id"], name: "index_campsite_votes_on_user_id", using: :btree
 
   create_table "date_votes", force: :cascade do |t|
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "event_date_id"
   end
 
   add_index "date_votes", ["user_id"], name: "index_date_votes_on_user_id", using: :btree
