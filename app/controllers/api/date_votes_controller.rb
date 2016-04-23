@@ -31,14 +31,14 @@ class API::DateVotesController < ApplicationController
   def destroy
     date_vote = DateVote.find(params[:id])
     if date_vote.destroy
-      render json: date_vote, status: 200, location: [:api, campsite_vote]
+      render json: date_vote, status: 200, location: [:api, date_vote]
     end
   end
 
   private
 
     def date_vote_params
-      params.permit(:user_id)
+      params.permit(:user_id, :event_date_id)
     end
 
 end
