@@ -16,6 +16,11 @@ User.create(
   name: "Scott Domes",
   picture_path: "https://scontent.xx.fbcdn.net/hprofile-xta1/v/t1.0-1/c1.0.50.50/p50x50/10450899_10152181634925382_5440199476018927392_n.jpg?oh=cabfda8e5ba3d3adb1fdb241c5025551&oe=57A18CBE")
 
+User.create(
+  fb_id: "1581388972173882",
+  name: "Alvin Chen",
+  picture_path: "https://scontent.xx.fbcdn.net/hprofile-xfa1/v/t1.0-1/c15.0.50.50/p50x50/10354686_10150004552801856_220367501106153455_n.jpg?oh=1b2f428689c126f80a083e30205ef68b&oe=57AD5F2F")
+
 Event.create(
   name: "FAOS Goes Camping",
   vote_on_location: true,
@@ -37,4 +42,8 @@ CampSite.create(
 
 Attendance.create(
   user_id: 2,
+  event_id: 1)
+
+Attendance.create(
+  user_id: 3,
   event_id: 1)
