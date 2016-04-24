@@ -11,6 +11,11 @@ User.create(
   name: "Scosama Juristochen",
   picture_path: "https://flavorwire.files.wordpress.com/2014/07/8drake.jpg")
 
+User.create(
+  fb_id: "10153549453065382",
+  name: "Scott Domes",
+  picture_path: "https://scontent.xx.fbcdn.net/hprofile-xta1/v/t1.0-1/c1.0.50.50/p50x50/10450899_10152181634925382_5440199476018927392_n.jpg?oh=cabfda8e5ba3d3adb1fdb241c5025551&oe=57A18CBE")
+
 Event.create(
   name: "FAOS Goes Camping",
   vote_on_location: true,
@@ -29,3 +34,7 @@ CampSite.create(
   name: "Party Central",
   event_id: 1,
   user_id: 1)
+
+Attendance.create(
+  user_id: 2,
+  event_id: 1)
