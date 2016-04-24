@@ -47,3 +47,57 @@ Attendance.create(
 Attendance.create(
   user_id: 3,
   event_id: 1)
+
+Event.create(
+  name: "Scott's Camping Event",
+  vote_on_location: true,
+  vote_on_date: true,
+  user_id: 3,
+  final_location_id: 1,
+  final_date_id: 1)
+
+EventDate.create(
+  start_date: "May 11th 2016",
+  end_date: "May 12th 2016",
+  event_id: 2,
+  user_id: 2)
+
+CampSite.create(
+  name: "Scott's House",
+  event_id: 2,
+  user_id: 2)
+
+Attendance.create(
+  user_id: 1,
+  event_id: 2)
+
+Attendance.create(
+  user_id: 3,
+  event_id: 2)
+
+Event.create(
+  name: "Let's Get Drunk",
+  vote_on_location: true,
+  vote_on_date: true,
+  user_id: 1,
+  final_location_id: 1,
+  final_date_id: 1)
+
+EventDate.create(
+  start_date: "May 20th 2016",
+  end_date: "May 30th 2016",
+  event_id: 3,
+  user_id: 1)
+
+CampSite.create(
+  name: "A Bar",
+  event_id: 3,
+  user_id: 1)
+
+Attendance.create(
+  user_id: 2,
+  event_id: 3)
+
+Attendance.create(
+  user_id: 3,
+  event_id: 3)
