@@ -12,7 +12,11 @@ class API::UsersController < ApplicationController
   def create
     matching_user = User.find_by(fb_id: params[:fb_id])
     if matching_user
-      render json: matching_user, status: 201, location: [:api, matching_user]
+      user_info = {
+        user: matching_user,
+        events: Event.where(user_id: matching_user.id)
+      }
+      render json: user_info, status: 201, location: [:api, matching_user]
     else
       user = User.new(user_params)
       if user.save
