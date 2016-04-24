@@ -66,7 +66,14 @@ class API::EventsController < ApplicationController
   private
 
     def event_params
-      params.permit(:name, :vote_on_location, :vote_on_date, :user_id)
+      params.permit(
+        :name, 
+        :vote_on_location, 
+        :vote_on_date, 
+        :user_id,
+        :final_location_id,
+        :final_date_id
+      )
     end
 
 
