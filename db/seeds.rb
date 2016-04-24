@@ -6,6 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+User.create(
+  fb_id: 123,
+  name: "Scosama Juristochen",
+  picture_path: "https://flavorwire.files.wordpress.com/2014/07/8drake.jpg")
+
 Event.create(
   name: "FAOS Goes Camping",
   vote_on_location: true,
@@ -24,4 +29,3 @@ CampSite.create(
   name: "Party Central",
   event_id: 1,
   user_id: 1)
-
