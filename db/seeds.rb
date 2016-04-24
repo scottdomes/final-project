@@ -53,8 +53,8 @@ Event.create(
   vote_on_location: true,
   vote_on_date: true,
   user_id: 3,
-  final_location_id: 1,
-  final_date_id: 1)
+  final_location_id: 2,
+  final_date_id: 2)
 
 EventDate.create(
   start_date: "May 11th 2016",
@@ -80,8 +80,8 @@ Event.create(
   vote_on_location: true,
   vote_on_date: true,
   user_id: 1,
-  final_location_id: 1,
-  final_date_id: 1)
+  final_location_id: 3,
+  final_date_id: 3)
 
 EventDate.create(
   start_date: "May 20th 2016",
