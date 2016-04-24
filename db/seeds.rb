@@ -52,7 +52,7 @@ Event.create(
   name: "Scott's Camping Event",
   vote_on_location: true,
   vote_on_date: true,
-  user_id: 3,
+  user_id: 2,
   final_location_id: 2,
   final_date_id: 2)
 

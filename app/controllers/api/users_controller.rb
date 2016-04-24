@@ -12,9 +12,12 @@ class API::UsersController < ApplicationController
   def create
     matching_user = User.find_by(fb_id: params[:fb_id])
     if matching_user
+      attendances = Attendance.where(user_id: matching_user.id)
+      attending_events = attendances.map { |attendance| attendance.event }
       user_info = {
         user: matching_user,
-        events: Event.where(user_id: matching_user.id)
+        events: Event.where(user_id: matching_user.id),
+        attendances: attending_events
       }
       render json: user_info, status: 201, location: [:api, matching_user]
     else

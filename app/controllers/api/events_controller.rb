@@ -15,11 +15,13 @@ class API::EventsController < ApplicationController
     dates = event.event_dates.map { |date| {dateRange: date, votes: date.date_votes} }
     campsites = event.camp_sites.map { |campsite| {campsite: campsite, votes: campsite.campsite_votes} }
     users = event.users
+    creator = event.user
     render json: {
       :details => event, 
       :dates => dates, 
       :campsites => campsites,
-      :users => users
+      :users => users,
+      :creator => creator
     }
   end
 
