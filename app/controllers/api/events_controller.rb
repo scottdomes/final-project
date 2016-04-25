@@ -35,15 +35,14 @@ class API::EventsController < ApplicationController
 
     if event.save
       e = EventDate.new(start_date: dates['start_date'], end_date: dates['end_date'], user_id: params['user_id'], event_id: Event.last.id)
-      if e.save
-        campsite = CampSite.new(user_id: params['user_id'], name: params['campsite_name'], event_id: Event.last.id)
-        if campsite.save
-          render json: event, status: 201, location: [:api, event]
-          # render json: e, status: 201, location: [:api, e]
-        else
-          render json: { errors: event.errors }, status: 422
-        end
-      else 
+      campsite = CampSite.new(user_id: params['user_id'], name: params['campsite_name'], event_id: Event.last.id)
+      if campsite.save && e.save
+        event.final_location_id = campsite.id
+        event.final_date_id = e.id
+        event.save
+        render json: event, status: 201, location: [:api, event]
+        # render json: e, status: 201, location: [:api, e]
+      else
         render json: { errors: event.errors }, status: 422
       end
     else
@@ -71,6 +70,7 @@ class API::EventsController < ApplicationController
 
     def event_params
       params.permit(
+        :id,
         :name, 
         :vote_on_location, 
         :vote_on_date, 
