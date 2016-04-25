@@ -22,12 +22,13 @@ User.create(
   picture_path: "https://scontent.xx.fbcdn.net/hprofile-xfa1/v/t1.0-1/c15.0.50.50/p50x50/10354686_10150004552801856_220367501106153455_n.jpg?oh=1b2f428689c126f80a083e30205ef68b&oe=57AD5F2F")
 
 Event.create(
-  name: "FAOS Goes Camping",
+  name: "Test-Own-Event-Voting-False",
   vote_on_location: true,
   vote_on_date: true,
   user_id: 1,
   final_location_id: 1,
-  final_date_id: 1)
+  final_date_id: 1,
+  voting_phase: false)
 
 EventDate.create(
   start_date: "May 4th 2016",
@@ -49,12 +50,13 @@ Attendance.create(
   event_id: 1)
 
 Event.create(
-  name: "Scott's Camping Event",
+  name: "Test-Other-Event-Voting-False",
   vote_on_location: true,
   vote_on_date: true,
   user_id: 2,
   final_location_id: 2,
-  final_date_id: 2)
+  final_date_id: 2,
+  voting_phase: false)
 
 EventDate.create(
   start_date: "May 11th 2016",
@@ -76,12 +78,13 @@ Attendance.create(
   event_id: 2)
 
 Event.create(
-  name: "Let's Get Drunk",
+  name: "Test-Own-Event-Voting-True",
   vote_on_location: true,
   vote_on_date: true,
   user_id: 1,
   final_location_id: 3,
-  final_date_id: 3)
+  final_date_id: 3,
+  voting_phase: true)
 
 EventDate.create(
   start_date: "May 20th 2016",
@@ -101,3 +104,43 @@ Attendance.create(
 Attendance.create(
   user_id: 3,
   event_id: 3)
+
+Event.create(
+  name: "Test-Other-Event-Voting-True",
+  vote_on_location: true,
+  vote_on_date: true,
+  user_id: 3,
+  final_location_id: 4,
+  final_date_id: 4,
+  voting_phase: true)
+
+EventDate.create(
+  start_date: "May 11th 2016",
+  end_date: "May 12th 2016",
+  event_id: 4,
+  user_id: 3)
+
+EventDate.create(
+  start_date: "May 11th 2016",
+  end_date: "May 12th 2016",
+  event_id: 4,
+  user_id: 2)
+
+CampSite.create(
+  name: "Alvin's House",
+  event_id: 4,
+  user_id: 3)
+
+CampSite.create(
+  name: "Scott's House",
+  event_id: 4,
+  user_id: 2)
+
+
+Attendance.create(
+  user_id: 1,
+  event_id: 4)
+
+Attendance.create(
+  user_id: 2,
+  event_id: 4)
