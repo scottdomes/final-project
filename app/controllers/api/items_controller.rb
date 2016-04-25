@@ -5,6 +5,11 @@ class API::ItemsController < ApplicationController
     respond_with Item.all
   end
 
+  def show
+    items = Item.where(event_id: params[:id])
+    respond_with items
+  end
+
   def create
     item = Item.new(item_params)
     if item.save
