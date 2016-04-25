@@ -76,7 +76,8 @@ class API::EventsController < ApplicationController
         :vote_on_date, 
         :user_id,
         :final_location_id,
-        :final_date_id
+        :final_date_id,
+        :voting_phase
       )
     end
 
