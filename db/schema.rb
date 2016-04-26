@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160425003653) do
+ActiveRecord::Schema.define(version: 20160426163341) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,15 +38,25 @@ ActiveRecord::Schema.define(version: 20160425003653) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.integer  "camp_site_id"
+    t.integer  "event_id"
   end
 
   add_index "campsite_votes", ["user_id"], name: "index_campsite_votes_on_user_id", using: :btree
+
+  create_table "cars", force: :cascade do |t|
+    t.integer  "event_id"
+    t.integer  "user_id"
+    t.integer  "passenger_capacity"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "date_votes", force: :cascade do |t|
     t.integer  "user_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "event_date_id"
+    t.integer  "event_id"
   end
 
   add_index "date_votes", ["user_id"], name: "index_date_votes_on_user_id", using: :btree
@@ -85,6 +95,13 @@ ActiveRecord::Schema.define(version: 20160425003653) do
     t.string   "list_type",  default: "public"
     t.integer  "user_id"
     t.integer  "event_id"
+  end
+
+  create_table "rides", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "car_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

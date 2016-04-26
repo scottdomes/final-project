@@ -10,13 +10,21 @@ class API::CampsiteVotesController < ApplicationController
   end
 
   def create
-    properties = {user_id: params['user_id'], camp_site_id: params['id']}
+    if CampsiteVote.find_by(user_id: params['user_id'], event_id: params['event_id']) != nil 
+      destroy_vote(params['user_id'], params['event_id'])
+    end
+    properties = {user_id: params['user_id'], camp_site_id: params['id'], event_id: params['event_id']}
     campsite_vote = CampsiteVote.new(properties)
     if campsite_vote.save
       render json: campsite_vote, status: 201, location: [:api, campsite_vote]
     else
       render json: { errors: campsite_vote.errors }, status: 422
     end
+  end
+
+  def destroy_vote (user_id, event_id)
+    campsite_vote = CampsiteVote.find_by(user_id: user_id, event_id: event_id)
+    campsite_vote.destroy
   end
 
   def update
@@ -39,7 +47,7 @@ class API::CampsiteVotesController < ApplicationController
   private
 
     def campsite_vote_params
-      params.permit(:user_id)
+      params.permit(:user_id, :event_id, :user_id)
     end
 
 end

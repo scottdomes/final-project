@@ -16,12 +16,14 @@ class API::EventsController < ApplicationController
     campsites = event.camp_sites.map { |campsite| {campsite: campsite, votes: campsite.campsite_votes} }
     users = event.users
     creator = event.user
+    cars = event.cars
     render json: {
       :details => event, 
       :dates => dates, 
       :campsites => campsites,
       :users => users,
-      :creator => creator
+      :creator => creator,
+      :cars => cars
     }
   end
 
