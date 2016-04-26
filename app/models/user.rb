@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
   has_many :attendances, dependent: :destroy
   has_many :events, through: :attendances
   has_many :cars
-  belongs_to :passenger, polymorphic: :true
+  has_many :rides
 end
