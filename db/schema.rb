@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160425003653) do
+ActiveRecord::Schema.define(version: 20160426151650) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20160425003653) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.integer  "camp_site_id"
+    t.integer  "event_id"
   end
 
   add_index "campsite_votes", ["user_id"], name: "index_campsite_votes_on_user_id", using: :btree
@@ -47,6 +48,7 @@ ActiveRecord::Schema.define(version: 20160425003653) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "event_date_id"
+    t.integer  "event_id"
   end
 
   add_index "date_votes", ["user_id"], name: "index_date_votes_on_user_id", using: :btree
