@@ -7,6 +7,7 @@ class Event < ActiveRecord::Base
   has_many :users, through: :attendances
   has_many :campsite_votes, dependent: :destroy
   has_many :date_votes, dependent: :destroy
+  has_many :cars, dependent: :destroy
 
   validates :name, presence: true
   
