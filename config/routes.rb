@@ -17,6 +17,8 @@ Rails.application.routes.draw do
       resources :items
       resources :camp_sites
       resources :event_dates
+      resources :cars
+      resources :rides
 
       resources :events, defaults: {format: :json} do
         resources :items

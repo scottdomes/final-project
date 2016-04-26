@@ -10,13 +10,21 @@ class API::DateVotesController < ApplicationController
   end
 
   def create
-    properties = {user_id: params['user_id'], event_date_id: params['id']}
+    if DateVote.find_by(user_id: params['user_id'], event_id: params['event_id']) != nil 
+      destroy_vote(params['user_id'], params['event_id'])
+    end 
+    properties = {user_id: params['user_id'], event_date_id: params['id'], event_id: params['event_id']}
     date_vote = DateVote.new(properties)
     if date_vote.save
       render json: date_vote, status: 201, location: [:api, date_vote]
     else
       render json: { errors: date_vote.errors }, status: 422
     end
+  end
+
+  def destroy_vote (user_id, event_id)
+    date_vote = DateVote.find_by(user_id: user_id, event_id: event_id)
+    date_vote.destroy
   end
 
   def update
@@ -39,7 +47,7 @@ class API::DateVotesController < ApplicationController
   private
 
     def date_vote_params
-      params.permit(:user_id, :event_date_id)
+      params.permit(:user_id, :event_date_id, :event_id)
     end
 
 end
