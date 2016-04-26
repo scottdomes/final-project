@@ -77,6 +77,11 @@ Attendance.create(
   user_id: 3,
   event_id: 2)
 
+Car.create(
+  user_id: 3,
+  event_id: 2,
+  passenger_capacity: 13)
+
 Event.create(
   name: "Test-Own-Event-Voting-True",
   vote_on_location: true,

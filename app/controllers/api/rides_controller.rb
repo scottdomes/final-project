@@ -14,6 +14,10 @@ class API::RidesController < ApplicationController
   end
 
   def create
+    past_rides = Ride.where(user_id: params['user_id'], event_id: params['event_id'])
+    unless past_rides.empty?
+      past_rides.each { |ride| ride.destroy } 
+    end
     ride = Ride.new(ride_params)
     if ride.save
       render json: ride, status: 201, location: [:api, ride]
@@ -41,7 +45,7 @@ class API::RidesController < ApplicationController
   private
 
     def ride_params
-      params.permit(:user_id, :car_id)
+      params.permit(:user_id, :car_id, :event_id)
     end
 
 end
