@@ -18,7 +18,7 @@ class API::RidesController < ApplicationController
     unless past_rides.empty?
       past_rides.each { |ride| ride.destroy } 
     end
-    unless params['deleteOnly'] === true
+    unless params['deleteOnly'] === "true"
       ride = Ride.new(ride_params)
       if ride.save
         render json: ride, status: 201, location: [:api, ride]
