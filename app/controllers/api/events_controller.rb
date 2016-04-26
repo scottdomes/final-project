@@ -14,8 +14,8 @@ class API::EventsController < ApplicationController
     event = Event.find(params[:id])
     dates = event.event_dates.map { |date| {dateRange: date, votes: date.date_votes} }
     campsites = event.camp_sites.map { |campsite| {campsite: campsite, votes: campsite.campsite_votes} }
-    users = event.users
     creator = event.user
+    users = [event.users, creator].flatten
     cars = event.cars.map { |car| {car: car, rides: car.rides} }
     render json: {
       :details => event, 
