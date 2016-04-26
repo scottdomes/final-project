@@ -6,8 +6,14 @@ class API::ItemsController < ApplicationController
   end
 
   def show
-    items = Item.where(event_id: params[:id])
-    respond_with items
+    publicItems = Item.where(event_id: params[:id]).where(list_type: 'public').order(:created_at)
+    privateItems = Item.where(event_id: params[:id]).where(list_type: 'private').order(:created_at)
+    render json: {
+      :publicPackingList => publicItems,
+      :privatePackingList => privateItems
+    }
+    # items = Item.where(event_id: params[:id]).order(:id)
+    # respond_with items
   end
 
   def create
