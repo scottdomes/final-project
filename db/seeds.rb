@@ -21,6 +21,18 @@ User.create(
   name: "Alvin Chen",
   picture_path: "https://scontent.xx.fbcdn.net/hprofile-xfa1/v/t1.0-1/c15.0.50.50/p50x50/10354686_10150004552801856_220367501106153455_n.jpg?oh=1b2f428689c126f80a083e30205ef68b&oe=57AD5F2F")
 
+User.create(
+  fb_id: 1234,
+  name: "Iggy Azalea",
+  picture_path: "https://germanbeautysabine.files.wordpress.com/2012/05/iggy-azalea-2012-03-26-300x300-e1334071099835.jpg")
+
+User.create(
+  fb_id: 2334,
+  name: "Mr. Foos", 
+  picture_path: "https://s-media-cache-ak0.pinimg.com/736x/80/bc/11/80bc118a31cd14a110d308ddedb4f31d.jpg")
+
+# Test-OWN-Event-Voting-False Details
+
 Event.create(
   name: "Test-Own-Event-Voting-False",
   vote_on_location: true,
@@ -36,6 +48,7 @@ EventDate.create(
   event_id: 1,
   user_id: 1)
 
+# CampSite ID 1
 CampSite.create(
   name: "Party Central",
   event_id: 1,
@@ -48,6 +61,31 @@ Attendance.create(
 Attendance.create(
   user_id: 3,
   event_id: 1)
+
+Attendance.create(
+  user_id: 4,
+  event_id: 1)
+
+Attendance.create(
+  user_id: 5,
+  event_id: 1)
+
+Car.create(
+  user_id: 4,
+  event_id: 1,
+  passenger_capacity: 4)
+
+Ride.create(
+  user_id: 3,
+  event_id: 1,
+  car_id: 1)
+
+Ride.create(
+  user_id: 1,
+  event_id: 1,
+  car_id: 1)
+
+# Test-OTHER-Event-Voting-False Details
 
 Event.create(
   name: "Test-Other-Event-Voting-False",
@@ -64,6 +102,7 @@ EventDate.create(
   event_id: 2,
   user_id: 2)
 
+# CampSite ID 2
 CampSite.create(
   name: "Scott's House",
   event_id: 2,
@@ -77,10 +116,39 @@ Attendance.create(
   user_id: 3,
   event_id: 2)
 
+Attendance.create(
+  user_id: 4,
+  event_id: 2)
+
 Car.create(
   user_id: 3,
   event_id: 2,
   passenger_capacity: 13)
+
+Ride.create(
+  user_id: 1,
+  event_id: 2,
+  car_id: 2)
+
+Ride.create(
+  user_id: 4,
+  event_id: 2,
+  car_id: 2)
+
+Car.create(
+  user_id: 2,
+  event_id: 2,
+  passenger_capacity: 5)
+
+Ride.create(
+  user_id: 5,
+  event_id: 2,
+  car_id: 3)
+
+
+
+
+# Test-OWN-Event-Voting-True Details
 
 Event.create(
   name: "Test-Own-Event-Voting-True",
@@ -97,10 +165,17 @@ EventDate.create(
   event_id: 3,
   user_id: 1)
 
+# CampSite ID 3
 CampSite.create(
   name: "A Bar",
   event_id: 3,
   user_id: 1)
+
+# CampSite ID 4
+CampSite.create(
+  name: "A Different Bar",
+  event_id: 3,
+  user_id: 2)
 
 Attendance.create(
   user_id: 2,
@@ -109,6 +184,17 @@ Attendance.create(
 Attendance.create(
   user_id: 3,
   event_id: 3)
+
+Attendance.create(
+  user_id: 4,
+  event_id: 3)
+
+Attendance.create(
+  user_id: 5,
+  event_id: 3)
+
+
+#Test-OTHER-Event-Voting-True
 
 Event.create(
   name: "Test-Other-Event-Voting-True",
@@ -131,16 +217,47 @@ EventDate.create(
   event_id: 4,
   user_id: 2)
 
+# CampSite ID 5
 CampSite.create(
   name: "Alvin's House",
   event_id: 4,
   user_id: 3)
 
+# CampSite ID 6
 CampSite.create(
   name: "Scott's House",
   event_id: 4,
   user_id: 2)
 
+# CampSite ID 7
+CampSite.create(
+  name: "Scosama's House",
+  event_id: 4,
+  user_id: 1)
+
+# CampSite ID 8
+CampSite.create(
+  name: "Iggy's House",
+  event_id: 4,
+  user_id: 4)
+
+CampsiteVote.create(
+  user_id: 3,
+  camp_site_id: 5,
+  event_id: 4
+)
+
+CampsiteVote.create(
+  user_id: 4,
+  camp_site_id: 8,
+  event_id: 4
+)
+
+CampsiteVote.create(
+  user_id: 5,
+  camp_site_id: 5,
+  event_id: 4
+)
 
 Attendance.create(
   user_id: 1,
@@ -148,4 +265,12 @@ Attendance.create(
 
 Attendance.create(
   user_id: 2,
+  event_id: 4)
+
+Attendance.create(
+  user_id: 5,
+  event_id: 4)
+
+Attendance.create(
+  user_id: 4,
   event_id: 4)
