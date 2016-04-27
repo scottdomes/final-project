@@ -17,13 +17,17 @@ class API::EventsController < ApplicationController
     users = event.users
     creator = event.user
     cars = event.cars
+    date_votes = event.date_votes
+    campsite_votes = event.campsite_votes
     render json: {
       :details => event, 
       :dates => dates, 
       :campsites => campsites,
       :users => users,
       :creator => creator,
-      :cars => cars
+      :cars => cars,
+      :date_votes => date_votes,
+      :campsite_votes => campsite_votes
     }
   end
 
