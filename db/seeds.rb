@@ -264,6 +264,12 @@ CampsiteVote.create(
   event_id: 4
 )
 
+DateVote.create(
+  user_id: 5,
+  event_id: 4,
+  event_date_id: 5
+  )
+
 Attendance.create(
   user_id: 1,
   event_id: 4)
