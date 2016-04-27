@@ -42,6 +42,7 @@ Event.create(
   final_date_id: 1,
   voting_phase: false)
 
+# EventDate ID 1
 EventDate.create(
   start_date: "May 4th 2016",
   end_date: "May 16th 2016",
@@ -96,6 +97,7 @@ Event.create(
   final_date_id: 2,
   voting_phase: false)
 
+# EventDate ID 2
 EventDate.create(
   start_date: "May 11th 2016",
   end_date: "May 12th 2016",
@@ -159,6 +161,7 @@ Event.create(
   final_date_id: 3,
   voting_phase: true)
 
+# EventDate ID 3
 EventDate.create(
   start_date: "May 20th 2016",
   end_date: "May 30th 2016",
@@ -205,12 +208,14 @@ Event.create(
   final_date_id: 4,
   voting_phase: true)
 
+# EventDate ID 4
 EventDate.create(
   start_date: "May 11th 2016",
   end_date: "May 12th 2016",
   event_id: 4,
   user_id: 3)
 
+# EventDate ID 5
 EventDate.create(
   start_date: "May 11th 2016",
   end_date: "May 12th 2016",
@@ -274,3 +279,51 @@ Attendance.create(
 Attendance.create(
   user_id: 4,
   event_id: 4)
+
+# Location-Voting-No-Date
+
+Event.create(
+  name: "Location-Voting-No-Date",
+  vote_on_location: true,
+  vote_on_date: false,
+  user_id: 1,
+  final_location_id: 9,
+  final_date_id: 6,
+  voting_phase: true)
+
+# CampSite ID 9
+CampSite.create(
+  name: "Iggy's House",
+  event_id: 5,
+  user_id: 1)
+
+# EventDate ID 6
+EventDate.create(
+  start_date: "May 11th 2016",
+  end_date: "May 12th 2016",
+  event_id: 5,
+  user_id: 1)
+
+# Date-Voting-No-Location
+
+Event.create(
+  name: "Date-Voting-No-Location",
+  vote_on_location: false,
+  vote_on_date: true,
+  user_id: 1,
+  final_location_id: 10,
+  final_date_id: 7,
+  voting_phase: true)
+
+# CampSite ID 10
+CampSite.create(
+  name: "Iggy's House",
+  event_id: 6,
+  user_id: 1)
+
+# EventDate ID 7
+EventDate.create(
+  start_date: "May 11th 2016",
+  end_date: "May 12th 2016",
+  event_id: 6,
+  user_id: 1)
