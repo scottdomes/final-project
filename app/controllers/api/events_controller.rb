@@ -15,6 +15,9 @@ class API::EventsController < ApplicationController
     dates = event.event_dates.map { |date| {dateRange: date, votes: date.date_votes} }
     campsites = event.camp_sites.map { |campsite| {campsite: campsite, votes: campsite.campsite_votes} }
     creator = event.user
+    cars = event.cars
+    date_votes = event.date_votes
+    campsite_votes = event.campsite_votes
     users = [event.users, creator].flatten
     cars = event.cars.map { |car| {car: car, rides: car.rides} }
     render json: {
@@ -23,7 +26,9 @@ class API::EventsController < ApplicationController
       :campsites => campsites,
       :users => users,
       :creator => creator,
-      :cars => cars
+      :cars => cars,
+      :date_votes => date_votes,
+      :campsite_votes => campsite_votes
     }
   end
 
