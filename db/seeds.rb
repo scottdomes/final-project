@@ -200,6 +200,14 @@ EventDate.create(
   event_id: 3,
   user_id: 1)
 
+# EventDate ID 4
+EventDate.create(
+  start_date: "May 10th 2016",
+  end_date: "May 19th 2016",
+  event_id: 3,
+  user_id: 2)
+
+
 DateVote.create(
   event_date_id: 3,
   user_id: 2,
@@ -212,7 +220,7 @@ DateVote.create(
 
 # CampSite ID 3
 CampSite.create(
-  name: "Kelowna",
+  name: "Squamish",
   event_id: 3,
   user_id: 1)
 
@@ -253,6 +261,56 @@ Attendance.create(
   user_id: 5,
   event_id: 3)
 
+Car.create(
+  user_id: 3,
+  event_id: 3,
+  passenger_capacity: 4)
+
+Ride.create(
+  user_id: 1,
+  event_id: 3,
+  car_id: 5)
+
+Ride.create(
+  user_id: 4,
+  event_id: 3,
+  car_id: 5)
+
+Car.create(
+  user_id: 2,
+  event_id: 3,
+  passenger_capacity: 5)
+
+Ride.create(
+  user_id: 5,
+  event_id: 3,
+  car_id: 6)
+
+Item.create(
+  list_type: "public",
+  label: "Cooler",
+  quantity: 1,
+  event_id: 3,
+  user_id: 5)
+
+Item.create(
+  list_type: "public",
+  label: "Chairs",
+  quantity: 1,
+  event_id: 3,
+  user_id: 3)
+
+Item.create(
+  list_type: "public",
+  label: "Camp stove",
+  quantity: 1,
+  event_id: 3)
+
+Item.create(
+  list_type: "private",
+  label: "Toothbrush",
+  quantity: 1,
+  event_id: 3)
 
 #Test-OTHER-Event-Voting-True
 
@@ -265,14 +323,14 @@ Event.create(
   final_date_id: 4,
   voting_phase: true)
 
-# EventDate ID 4
+# EventDate ID 5
 EventDate.create(
   start_date: "May 11th 2016",
   end_date: "May 12th 2016",
   event_id: 4,
   user_id: 3)
 
-# EventDate ID 5
+# EventDate ID 6
 EventDate.create(
   start_date: "May 20th 2016",
   end_date: "May 22th 2016",
