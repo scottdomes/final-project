@@ -19,12 +19,14 @@ class API::EventsController < ApplicationController
     date_votes = event.date_votes
     campsite_votes = event.campsite_votes
     users = [event.users, creator].flatten
+    usersHash = Hash[users.map { |k, v| [k.id, k] }] #removes users after when api cleaned up and use usershash
     cars = event.cars.map { |car| {car: car, rides: car.rides} }
     render json: {
       :details => event, 
       :dates => dates, 
       :campsites => campsites,
       :users => users,
+      :usersHash => usersHash,
       :creator => creator,
       :cars => cars,
       :date_votes => date_votes,
